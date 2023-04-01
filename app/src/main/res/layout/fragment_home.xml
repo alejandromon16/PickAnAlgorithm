@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="30dp"
+        android:paddingVertical="40dp">
+
+
+        <TextView
+            android:id="@+id/title_home"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:fontFamily="sans-serif"
+            android:text="Bienvenido!!"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/subtitle_home"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:fontFamily="sans-serif"
+            android:text="Search the algorithm that you desire to use"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="16dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="select an algorithm" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/input_data"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginHorizontal="30dp" />-->
+    </LinearLayout>
+</FrameLayout>
