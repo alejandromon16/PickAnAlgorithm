@@ -3,12 +3,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".historyFragment">
+    tools:context="HistoryFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
+        android:paddingVertical="40dp"
+        android:orientation="vertical"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        >
+
+        <TextView
+            android:paddingBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="History"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/algorithms_list_item"
+                tools:listitem="@layout/algorithm_list_item"/>
+
+        </LinearLayout>
+    </LinearLayout>
 
 </FrameLayout>
